@@ -1,7 +1,7 @@
-def calcularCuota(monto, tasa_interes, meses):
-    tasa_mensual = tasa_interes / 100 / 12
-    cuota = monto * (tasa_mensual * (1 + tasa_mensual) ** meses) / ((1 + tasa_mensual) ** meses - 1)
-    return cuota
+def calcular_cuota(prestamo, tasa_interes_anual, plazo_meses):
+    tasa_mensual = tasa_interes_anual / 100 / 12
+    cuota_mensual = (prestamo * tasa_mensual) / (1 - (1 + tasa_mensual) ** -plazo_meses)
+    return cuota_mensual
 
 from datetime import datetime
 
