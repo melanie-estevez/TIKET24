@@ -14,4 +14,5 @@ def calcularEdad(anioNacimiento):
     edad = anioActual - anioNacimiento
     return edad
 
-
+def encontrarMayor(a, b, c):
+    return max(a, b, c)
