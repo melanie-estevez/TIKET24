@@ -16,3 +16,6 @@ def calcularEdad(anioNacimiento):
 
 def encontrarMayor(a, b, c):
     return max(a, b, c)
+
+def encontrarMenor(a, b, c, d):
+    return min(a, b, c, d)
